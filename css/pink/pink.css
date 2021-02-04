@@ -1,0 +1,44 @@
+:root {
+    --pink: #ec63aeda;
+}
+
+.aside .logo a::before {
+    border-top: 4px solid var(--pink);
+    border-left: 4px solid var(--pink);
+}
+
+.aside .logo a::after {
+    border-bottom: 4px solid var(--pink);
+    border-right: 4px solid var(--pink);
+}
+
+.contact .contact-info-item .icon  .fa,
+.blog .blog-item-inner .blog-info .blog-tags a,
+.portfolio .portfolio-filter button.active,
+.about .about-content .about-text h3 span,
+.aside .logo span,
+.aside .nav li a:hover,
+.aside .nav li a.active {
+    color: var(--pink);
+}
+
+.blog .blog-item-inner .blog-img .blog-date,
+.lightbox .lightbox-controls .prev-item,
+.lightbox .lightbox-controls .next-item ,
+.buttons .btn,
+.btn,
+.service-item .service-item-inner .icon,
+.about .about-content .timeline .circle-dot,
+.about .about-content .timeline .timeline-item::before,
+.aside .nav-toggler span,
+.aside .nav-toggler span::before,
+.aside .nav-toggler span::after,
+.section-title h2::before,
+.section-title h2::after,
+.home .intro .social-links a {
+    background-color: var(--pink);
+}
+
+.portfolio .portfolio-filter button.active {
+    border-color: var(--pink);
+}

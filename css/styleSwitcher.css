@@ -1,0 +1,85 @@
+@import url(../css/fonts.css);
+
+:root {
+    /* Theme colors */
+    --bgDark: #333232;
+    --bgLight: #6e6c6e;
+    --heading: #1f1f205e;
+    --text: #e3e0f3;
+    --borderDark: #717177;
+    --borderLight: #b9b4bb;
+    --shadow: 0 0 20px rgba(107, 107, 110, 0.548);
+
+    /* Theme font-family */
+    --Montserrat: 'Montserrat',sans-serif;
+    --Raleway:'Raleway',sans-serif;
+    --Roboto:'Roboto',sans-serif;
+}
+
+.style-switcher {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid var(--borderLight);
+    border-right: none;
+    border-radius: 0 0 0 5px;
+    transform: translateX(100%);
+    transition: all .3s ease;
+}
+
+.style-switcher.open {
+    transform: translateX(0%);
+}
+
+.style-switcher h5 {
+    font-size: 16px;
+    color: var(--heading);
+    margin-bottom: 5px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--borderLight);
+}
+
+.style-switcher ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.style-switcher ul li {
+    display: inline-block;
+}
+
+.style-switcher ul li a {
+    height: 30px;
+    width: 30px;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 2px;
+}
+
+.style-switcher .toggle-style-switcher {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background: #fff;
+    left: -46px;
+    top: 0;
+    border: 1px solid var(--borderLight);
+    border-right: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+}
+
+
+.style-switcher .toggler-style-switcher .fa {
+    font-size: 20px;
+    line-height: 43px;
+}
