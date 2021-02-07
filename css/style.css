@@ -337,7 +337,7 @@ body {
 
 /* Home */
 .home {
-    min-width: 100vh;
+    min-width: 100vw;
     display: flex;
 }
 
@@ -1083,11 +1083,18 @@ body.light .shadow-dark {
 
 @media (max-width: 575px) {
     .section {
-        padding: 0 5px;
+        padding: 0;
+    }
+    .section .container {
+        padding: 30px;
     }
     .home {
         justify-content: center;
         align-items: center;
+    }
+
+    .home .intro img {
+        /* display: block; */
     }
 
     .contact .contact-info-item,
